@@ -8,6 +8,7 @@
 <body>
     <main class="fondo">
         <section class="cuadrado1"></section>
+        <section class="cuadrado2"></section>
     </main>
 
 </body>
@@ -21,7 +22,7 @@
     padding: 0;
 }
 
-.body{
+body{
     height: 100vh;
         margin: 0;
         padding: 0;
@@ -30,12 +31,28 @@
         flex-direction: column;
         justify-content: center;
         background-color: black;
+        align-items: center;
 }
 
 .fondo{
-    height: 90vh;
-    aspect-ratio: 1/1;
-    background-color: rgb(255, 196, 34);
-    margin-top: 50%;
+    width: 650px;
+    height: 650px;
+    background-color: white;
+
+    display: flex;
+    align-items: flex-end;
 }
+
+.cuadrado1{
+    height: 50%;
+    width: 50%;
+    background-color: #656a73;
+}
+
+.cuadrado2{
+    height: 50%;
+    width: 50%;
+    background-color: #474f59;
+}
+
 </style>
