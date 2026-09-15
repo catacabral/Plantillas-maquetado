@@ -11,7 +11,9 @@
             <span></span><span></span><span></span><span></span><span></span>
         </nav>
         <section class="filaprin">
-        <aside class="barralate"></aside>
+        <aside class="barralate">
+            <figure class="miniatura"><span class="miniaturamini"></span></figure>
+        </aside>
         <aside class="video"></aside>
     </section>
     <section class="parteabajo">
@@ -80,7 +82,21 @@
 
         .barralate{
             width: 20%;
-            background-color: #ffd280;
+
+            .miniatura{
+                background-color: #ffd280;
+                aspect-ratio: 1 / 1;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 15px;
+
+                .miniaturamini{
+                    width: 75%;
+                    height: 60%;
+                    background-color: #ffb347;
+                }
+            }
         }
         .video{
             flex: 1;
