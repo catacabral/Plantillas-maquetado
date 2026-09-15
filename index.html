@@ -37,9 +37,15 @@
         </div>
      </article>
      <article class="cuadradode">
-        <figure class="IMG-lista">
-            <div class="IMG"></div><div class="IMG"></div><div class="IMG"></div><div class="IMG"></div>
-        </figure>
+        <section class="contenedorfilas">
+            <div class="fila-lista">
+                <div class="IMG"></div>
+                <div class="texto-bloque">
+                    <div class="titulolista"></div>
+                    <div class="sublinea-lista"></div>
+                </div>
+            </div>
+        </section>
      </article>
     </section>
 
@@ -148,17 +154,18 @@
         }
     }
     .filaprin{
-        height: 300px;
+        height: 285px;
         margin-bottom: 30px;
         display: flex;
-        gap: 25px;
+        gap: 45px;
 
         .barralate{
-            width: 20%;
+            width: 25%;
 
             .miniatura{
                 background-color: #ffd280;
-                aspect-ratio: 1 / 1;
+                width: 100%;
+                height: 140px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
