@@ -30,7 +30,12 @@
         
     </section>
     <section class="parteabajo">
-     <article class="cuadradoiz"></article>
+     <article class="cuadradoiz">
+        <figure class="video"><span class="botonvideo"></span></figure>
+        <div class="botonabajo">
+            <span class="lvideo"></span>
+        </div>
+     </article>
      <article class="cuadradode"></article>
     </section>
 
@@ -76,6 +81,42 @@
             align-items: center;
             justify-content: center;
             gap: 20px;
+
+            .video{
+                width: 78%;
+                aspect-ratio: 4 / 3;
+                background-color: #cccccc;
+                border: 8px solid white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+            .botonvideo{
+                width: 0;
+                height: 0;
+                border-top: 22px solid transparent;
+                border-bottom: 22px solid transparent;
+                border-left: 35px solid white;
+                margin-left: 8px;
+            }
+            }
+            .botonabajo{
+                width: 28%;
+                height: 22px;
+                background-color: #ffd280;
+                border: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+            .lvideo{
+            width: 65%;
+            height: 7px;
+            background-color: white;
+            }
+            }
+
+        
         }
         .cuadradode{
             flex: 1;
