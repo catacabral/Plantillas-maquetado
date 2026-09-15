@@ -36,7 +36,11 @@
             <span class="lvideo"></span>
         </div>
      </article>
-     <article class="cuadradode"></article>
+     <article class="cuadradode">
+        <figure class="IMG-lista">
+            <div class="IMG"></div><div class="IMG"></div><div class="IMG"></div><div class="IMG"></div>
+        </figure>
+     </article>
     </section>
 
     </main>
@@ -125,6 +129,21 @@
             align-items: center;
             padding: 30px;
             gap: 15px;
+
+            .IMG-lista{
+                flex: 1;
+                flex-direction: column;
+                justify-content: space-between;
+                gap: 30px;
+                display: flex;
+                
+                .IMG{
+                    width: 80px;
+                    height: 50px;
+                    background-color: #cccccc;
+
+                }
+            }
 
         }
     }
