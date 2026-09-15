@@ -13,8 +13,21 @@
         <section class="filaprin">
         <aside class="barralate">
             <figure class="miniatura"><span class="miniaturamini"></span></figure>
+            <p class="linea"></p>
+            <p class="linea"></p>
+            <div class="boton"></div>
         </aside>
-        <aside class="video"></aside>
+        <aside class="cad">
+            <figure class="cadmini"></figure>
+            <section class="infocad">
+                <p class="titulocad"></p>
+                <p class="descripcion"></p>
+                <p class="descripcion"></p>
+                <p class="descripcion"></p>
+                <p class="descripcion corta"></p>
+            </section>
+        </aside>
+        
     </section>
     <section class="parteabajo">
      <article class="cuadradoiz"></article>
@@ -97,13 +110,59 @@
                     background-color: #ffb347;
                 }
             }
+            .linea{
+                height: 18px;
+                width: 100%;
+                background-color: #cccccc;
+                margin-bottom: 10px;
+            }
+
+            .boton{
+                width: 40%;
+                height: 22px;
+                background-color: #4b515c;
+                border: none;
+                margin-top: 20px;
+                margin-left: auto;
+            }
         }
-        .video{
+        .cad{
             flex: 1;
             background-color: #656d78;
             display: flex;
             gap: 20px;
-            padding: 25px;}
+            padding: 25px;
+          
+            .cadmini{
+                width: 42%;
+                aspect-ratio: 1 / 1;
+                background-color: #3d434c;
+            }
+            .infocad{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                .titulocad{
+                    width: 45%;
+                    height: 14px;
+                    background-color: #ffd280;
+                    margin-bottom: 10px;
+                }
+
+                .descripcion{
+                    height: 6px;
+                    width: 100%;
+                    background-color: #a9aeb5;
+                }
+                .descripcion.corta{ 
+                    width: 60%; 
+                }
+
+
+            }
+        }
         }
     
     }
