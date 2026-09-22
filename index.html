@@ -37,15 +37,39 @@
         </div>
      </article>
      <article class="cuadradode">
-        <section class="contenedorfilas">
-            <div class="fila-lista">
-                <div class="IMG"></div>
-                <div class="texto-bloque">
-                    <div class="titulolista"></div>
-                    <div class="sublinea-lista"></div>
+        <figure class="lista-items">
+            <section class="items">
+                <div class="itemmini"></div>
+                <div class="lineas-item">
+                    <p class="linea1"></p><p class="linea2"></p><p class="linea2"></p><p class="linea2"></p><p class="linea3"></p>
                 </div>
-            </div>
-        </section>
+                </section>
+
+
+                <section class="items">
+                <div class="itemmini"></div>
+                <div class="lineas-item">
+                    <p class="linea1"></p><p class="linea2"></p><p class="linea2"></p><p class="linea2"></p><p class="linea3"></p>
+                </div>
+                </section>
+
+
+                <section class="items">
+                <div class="itemmini"></div>
+                <div class="lineas-item">
+                    <p class="linea1"></p><p class="linea2"></p><p class="linea2"></p><p class="linea2"></p><p class="linea3"></p>
+                </div>
+                </section>
+
+
+                <section class="items">
+                <div class="itemmini"></div>
+                <div class="lineas-item">
+                    <p class="linea1"></p><p class="linea2"></p><p class="linea2"></p><p class="linea2"></p><p class="linea3"></p>
+                </div>
+                </section>
+        </figure>
+
      </article>
     </section>
 
@@ -136,20 +160,59 @@
             padding: 30px;
             gap: 15px;
 
-            .IMG-lista{
-                flex: 1;
-                flex-direction: column;
-                justify-content: space-between;
-                gap: 30px;
-                display: flex;
-                
-                .IMG{
-                    width: 80px;
-                    height: 50px;
-                    background-color: #cccccc;
 
+            .lista-items{
+                display: flex;
+                gap: 45px;
+                flex-direction: column;
+                width: 90%;
+
+
+                .items {
+                    display: flex;
+                    gap: 15px;
+                    align-items: center;
+                    width: 90%;
+
+
+                    .itemmini{
+                        width: 75px;
+                        height: 55px;
+                        background-color: #cccccc;
+                        flex-shrink: 0;
+                    }
+
+
+                    .lineas-item{
+                        flex: 1;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+
+                        .linea1{
+                            height: 10px;
+                            width: 60%;
+                            background-color: #545a64;
+                        }
+
+
+                        .linea2{
+                            height: 4px;
+                            width: 100%;
+                            background-color: #e9ecf1;
+                        }
+
+
+                        .linea3{
+                            height: 4px;
+                            width: 80%;
+                            background-color: #e9ecf1;
+                        }
+                    }
                 }
             }
+
 
         }
     }
